@@ -47,6 +47,12 @@ $ docker run -it -p 8080:8080 testcodingame
 ## Swagger UI
 
 Swagger dispone de una seguridad de JWT, implementada en la cual por el momento no cuenta con contraseña por defecto. Cualquier caracter lo toma como contraseña.
+
+### Pages
+Swagger: http://localhost:8080/swagger-ui.html#/
+
+License Swagger: http://localhost:8080/v2/api-docs
+
 ## License
 
 Santiago Suarez
