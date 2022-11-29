@@ -15,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.annotations.Cacheable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,6 +57,7 @@ public class SuperHeroesController {
     }
 
     @GetMapping("/heroes/{id}")
+    @Cacheable(value = "heroes")
     @ApiOperation(value = "Get the Super Hero via Id")
     @ApiResponses( value = {
             @ApiResponse(code = 200, message = "Success"),
