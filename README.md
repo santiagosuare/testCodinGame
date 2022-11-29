@@ -44,7 +44,9 @@ $ docker build -t testcodingame .
 $ docker run -it -p 8080:8080 testcodingame    
 ```
 
+## Swagger UI
 
+Swagger dispone de una seguridad de JWT, implementada en la cual por el momento no cuenta con contraseña por defecto. Cualquier caracter lo toma como contraseña.
 ## License
 
 Santiago Suarez
